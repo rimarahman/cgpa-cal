@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+	<h1 class="title"> Calculate your CGPA</h1>
+		<div class="container">
+			<div class="input-group">
+				<label for="semester-input" id="semilabel"
+					>Enter Your semester:</label
+				>
+				<input type="number" id="semi_input" />
+			</div>
+			<div class="input-group" >
+				<label for="credit-input" id="Clabel"
+					>Enter Your Credit:</label
+				>
+				<input type="number" id="credit_input" />
+			</div>
+			<div class="input-group">
+				<label for="SGPA-input" id="Slabel"
+					>Enter Your SGPA:</label
+				>
+				<input type="number" id="SGPA_input" />
+			</div>
+			<div class="input-group btn-group row">
+				<button class="next col" id="add_CGPA"> ADD </button>
+				<div class="spacer"></div>
+				<button class="danger col" id="btn_reset">Reset</button>
+			</div>
+		
+		
+		
+	</div>
+	<table id="table" class="table table-bordered">
+		<thead>
+			<tr>
+				<th>semester</th>
+				<th>credit</th>
+				<th>SGPA</th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+	
+		</tbody>
+		<tfoot id="tfoot">
+	
+		</tfoot>
+	</table>
+	<div class="row">
+		<div class="col">
+			<input id="calc_gp" class="btn btn-success display-none " type="button" value="Calculate CGPA">
+		</div>
+	
+	</div>
+	<div class="container mtop result">
+		<p>
+			Your CGPA is :
+			<span id="dynamic__cgpa">_________</span>
+		</p>
+		<p class="cgpa_texts" id="cgpa_text"></p>
+	</div>
+</div>
+</div>
+		<script src="app.js"></script>
+
+
+</body>
+</html>
